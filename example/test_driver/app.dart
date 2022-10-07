@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text(
               "Body text",
               key: Key(("text")),
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
           ),
         ),
