@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+
 import 'package:solid_bottom_sheet/src/solid_bloc.dart';
 
 import '../solid_bottom_sheet.dart';
@@ -7,7 +8,7 @@ class SolidController extends ValueNotifier<bool> {
   SolidBloc _bloc = SolidBloc();
 
   // This is the current height of the bottomSheet's body
-  double? _height;
+  double _height = 0.0;
 
   // This is the current smoothness of the bottomSheet
   Smoothness? smoothness;
@@ -27,7 +28,7 @@ class SolidController extends ValueNotifier<bool> {
   }
 
   // Returns the value of the height
-  double get height => _height!;
+  double get height => _height;
 
   //  Returns if the solid bottom sheet is opened or not
   bool get isOpened => value;
